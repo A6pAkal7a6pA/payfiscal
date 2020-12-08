@@ -1140,9 +1140,6 @@ a {
   .order__item-3 {
     right: 9%;
   }
-  .download {
-    margin-bottom: 500px;
-  }
 }
 
 @media (max-width: 961px) {
@@ -1184,6 +1181,15 @@ a {
 @media (max-width: 768px) {
   .download {
     margin-bottom: 200px;
+  }
+  .sale__title {
+    font-size: 30px;
+  }
+  .sale__item {
+    font-size: 140px;
+  }
+  .sale__subtitle {
+    font-size: 20px;
   }
 }
 
@@ -1336,6 +1342,9 @@ a {
   .popup-reg__title {
     font-size: 20px;
     width: 100%;
+  }
+  .sale__body {
+    padding: 10px 20px;
   }
 }
 
