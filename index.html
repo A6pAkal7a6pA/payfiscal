@@ -9,16 +9,21 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper" id="top">
+    <div class="up">
+      <a href="#top">
+        <span class="far fa-arrow-alt-circle-up"></span>
+      </a>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__body">
           <div class="header__logo logo">
-            <img src="img/logo.png" alt="">
+            <img src="img/new-logo.png" alt="">
           </div>
           <div class="header__menu">
             <div class="header__enter enter">
-              <a class="enter__link js-popup-enter">Вхід</a>
+              <span class="enter__link js-popup-enter">Вхід</span>
             </div>
             <div class="header__burger">
               <span></span>
@@ -290,6 +295,22 @@
         </div>
       </section>
 
+      <section class="sale">
+        <div class="sale__body">
+          <div class="sale__title">
+            У нас діє партнерська програма:<br>
+            приведи клієнта і отримай
+          </div>
+          <div class="sale__item">
+            10<span>%</span>
+          </div>
+          <div class="sale__subtitle">
+            від кожного його платежу за користування<br>
+            послугами програмного РРО
+          </div>
+        </div>
+      </section>
+
       <section class="callback" id="contacts">
         <div class="container">
           <div class="callback__body">
@@ -321,9 +342,8 @@
     </div>
     <div class="popup-enter">
       <div class="popup-enter__body">
-
         <div class="popup-enter__title">
-          Авторизація/Реєстрація
+          <a href="#">Авторизація</a>/<a href="#" id="popup-reg">Реєстрація</a>
           <div class="popup-enter__exit">
             <img src="img/exit.png" alt="">
           </div>
@@ -336,13 +356,36 @@
           </button>
         </form>
       </div>
-    </div>
-    <div class="popup-reg">
 
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="js/script.js"></script>
+
+    <div class="popup-reg">
+      <div class="popup-reg__body">
+        <div class="popup-reg__title">
+          <a href="#">Реєстрація</a>/<a href="#" id="popup-enter">Авторизація</a>
+          <div class="popup-enter__exit">
+            <img src="img/exit.png" alt="">
+          </div>
+        </div>
+        <form action="" class="popup-reg__form">
+          <input name="login" type="text" placeholder="Login">
+          <input name="password" type="text" placeholder="Пароль">
+          <input name="re-password" type="text" placeholder="Пароль ще раз">
+          <input name="email" type="text" placeholder="E-mail">
+          <input name="login" type="text" placeholder="ЄДРПОУ компанії">
+          <input name="password" type="text" placeholder="Відповідальна особа">
+          <input name="number" type="text" placeholder="Номер телефону">
+          <input name="code" type="text" placeholder="Код типу діяльності компанії">
+          <button class="popup-reg__button button">
+            Увійти
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/129ede24b4.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
