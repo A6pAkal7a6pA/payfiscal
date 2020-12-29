@@ -595,11 +595,16 @@ a {
   &__content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   &__item {
+  }
+
+  &__item:nth-child(2n) {
+    display: none;
   }
 
   &__text {
@@ -865,7 +870,6 @@ a {
 }
 
 .popup-enter:target {
-
 }
 
 .popup-enter.active {
@@ -893,7 +897,6 @@ a {
     max-width: 450px;
     margin: 0 auto;
     margin-top: 100px;
-    
   }
 
   &__exit {
@@ -996,8 +999,486 @@ a {
   }
 }
 
-#opys {
+.main-screen-pa {
+  width: 100%;
+  height: 100%;
+
+  &__body {
+    background: url(../img/pa-bg.jpg) center / cover no-repeat;
+    padding-top: 150px;
+  }
+
+  &__content {
+    max-width: 767px;
+    margin: 0 auto;
+    background: url(../img/pa-con-bg.png) center / cover no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &__hum-image {
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  &__hum-image img {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  &__name {
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__company {
+    color: #ffffff;
+    font-size: 37px;
+    font-weight: 500;
+    line-height: 35.92px;
+    text-align: center;
+    letter-spacing: 0.82px;
+    margin-bottom: 40px;
+  }
+
+  &__span {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 35.92px;
+    text-align: center;
+    letter-spacing: 0.68px;
+  }
+
+  &__reg {
+    margin-bottom: 30px;
+  }
+
+  &__reg p {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 31.6px;
+    text-align: center;
+  }
+
+  &__sum {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  &__menu {
+  }
 }
+.menu-pa {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    margin: 0 60px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+  }
+
+  &__item span {
+    margin: 20px 0;
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 26.71px;
+    text-align: center;
+  }
+
+  &__desc {
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45.63px;
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+
+.pa-add-dep {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  overflow: auto;
+  &__body {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
+    padding: 70px 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  &__content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  &__exit {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    background-color: #c5c5c5;
+    border-radius: 50%;
+    padding: 10px;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+  }
+
+  &__title {
+    margin-bottom: 65px;
+  }
+  &__title-2 {
+    margin-bottom: 30px;
+  }
+
+  &__title span {
+    color: #00188f;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 41.53px;
+    text-align: center;
+    letter-spacing: -0.42px;
+    border-bottom: 1px solid #00188f;
+  }
+
+  &__button {
+    margin-bottom: 20px;
+  }
+
+  &__small-button {
+    margin-bottom: 120px;
+  }
+
+  &__uparea {
+    box-shadow: 0 0 9px rgba(77, 77, 77, 0.25);
+    border-radius: 10px;
+    background-color: #ffffff;
+    max-width: 530px;
+    width: 100%;
+  }
+
+  &__form {
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+  }
+  &__label input[type="file"] {
+    opacity: 0;
+  }
+
+  &__label span {
+    opacity: 0.59;
+    color: #222222;
+    font-family: "Rubik Roman";
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.28px;
+    text-align: center;
+  }
+}
+.pa-title {
+  color: #222222;
+  font-size: 49px;
+  font-weight: 500;
+  line-height: 49.14px;
+  text-align: center;
+  letter-spacing: -1.31px;
+}
+.pa-button {
+  width: 337px;
+  height: 88px;
+}
+.pa-button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-266deg, #4ddbff 0%, #00188f 56%, #00188f 100%);
+  color: #ffffff;
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 8px 0;
+}
+.pa-small-button {
+  width: 235px;
+  height: 75px;
+}
+
+.pa-small-button a {
+  display: block;
+  box-shadow: 0 0 5px 1px rgba(6, 6, 6, 0.35);
+  border-radius: 20px;
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.pa-add-user {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  overflow: auto;
+  &__body {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
+    padding: 70px 50px;
+    border-radius: 20px;
+  }
+  &__content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  &__exit {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    background-color: #c5c5c5;
+    border-radius: 50%;
+    padding: 10px;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+  }
+
+  &__title {
+    color: #222222;
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.31px;
+    margin-bottom: 50px;
+  }
+
+  &__num {
+  }
+
+  &__select {
+    appearance: none;
+    opacity: 0.39;
+    color: #222222;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 37px;
+    text-align: center;
+    box-shadow: 0 0 5px 1px rgba(6, 6, 6, 0.25);
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 420px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__select option:last-child {
+    // display: flex;
+    background-color: #000;
+  }
+
+  &__select {
+    // background-color: #000000;
+  }
+
+  &__name {
+    margin-bottom: 20px;
+  }
+
+  &__name input {
+    width: 420px;
+    opacity: 0.39;
+    color: #222222;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 37px;
+    text-align: center;
+    box-shadow: 0 0 5px 1px rgba(6, 6, 6, 0.25);
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+  }
+
+  &__small-button {
+  }
+}
+
+option {
+  background-color: #000;
+}
+.pa-small-button {
+}
+
+.pa-add-edit {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  overflow: auto;
+  &__body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
+    padding: 70px 50px;
+    border-radius: 20px;
+  }
+  &__content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  &__exit {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    background-color: #c5c5c5;
+    border-radius: 50%;
+    padding: 10px;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+  }
+
+  &__title {
+    color: #222222;
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.31px;
+    margin-bottom: 20px;
+  }
+
+  &__green-button {
+    width: 260px;
+    height: 67px;
+    margin-bottom: 40px;
+  }
+  &__green-button a {
+    display: block;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    display: block;
+    box-shadow: 0 0 5px rgba(77, 77, 77, 0.35);
+    border-radius: 10px;
+    background-color: #08ac00;
+    padding: 15px;
+  }
+
+  &__uparea {
+    box-shadow: 0 0 9px rgba(77, 77, 77, 0.25);
+    border-radius: 10px;
+    background-color: #ffffff;
+    max-width: 380px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__form {
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+  }
+  &__label input[type="file"] {
+    opacity: 0;
+  }
+
+  &__label span {
+    opacity: 0.59;
+    color: #222222;
+    font-family: "Rubik Roman";
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.28px;
+    text-align: center;
+  }
+
+  &__small-button {
+    width: 286px;
+    height: 77px;
+    // padding: 20px;
+  }
+}
+
+// ========================== MEDIA ==========================
 @media (max-width: 1229px) {
   .what__icon {
     right: 0;
@@ -1039,7 +1520,6 @@ a {
   .order__item-3 {
     right: 9%;
   }
-
 }
 
 @media (max-width: 961px) {
@@ -1087,7 +1567,6 @@ a {
     font-size: 140px;
   }
   .sale__item span {
-
   }
 
   .sale__subtitle {
@@ -1202,7 +1681,7 @@ a {
     padding-right: 10px;
   }
 
-  .popup-enter__form input{
+  .popup-enter__form input {
     max-width: 450px;
   }
 }
@@ -1298,7 +1777,7 @@ a {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .popup-reg__form input{
+  .popup-reg__form input {
     max-width: 350px;
   }
 }
