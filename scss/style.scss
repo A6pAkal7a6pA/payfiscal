@@ -999,6 +999,8 @@ a {
   }
 }
 
+//================= PA ================
+
 .main-screen-pa {
   width: 100%;
   height: 100%;
@@ -1117,7 +1119,7 @@ a {
 
 .pa-add-dep {
   display: none;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   top: 0;
@@ -1126,26 +1128,25 @@ a {
   background-color: rgba($color: #000000, $alpha: 0.8);
   overflow: auto;
   &__body {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin: 0 auto;
-    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
-    padding: 70px 50px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    // overflow: auto;
+    min-height: 100%;
+    padding: 40px 10px;
   }
   &__content {
+    max-width: 650px;
+    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
+    position: relative;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
     width: 100%;
+    border-radius: 20px;
+    padding: 65px 60px;
   }
   &__exit {
     position: absolute;
@@ -1208,7 +1209,6 @@ a {
   &__label span {
     opacity: 0.59;
     color: #222222;
-    font-family: "Rubik Roman";
     font-size: 35px;
     font-weight: 400;
     line-height: 45.28px;
@@ -1240,9 +1240,6 @@ a {
   border-radius: 20px;
   padding: 8px 0;
 }
-.pa-small-button {
-}
-
 .pa-small-button a {
   display: block;
   box-shadow: 0 0 5px 1px rgba(6, 6, 6, 0.35);
@@ -1258,7 +1255,7 @@ a {
 
 .pa-add-user {
   display: none;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   top: 0;
@@ -1267,24 +1264,25 @@ a {
   background-color: rgba($color: #000000, $alpha: 0.8);
   overflow: auto;
   &__body {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin: 0 auto;
-    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
-    padding: 70px 50px;
-    border-radius: 20px;
+    min-height: 100%;
+    padding: 40px 10px;
   }
   &__content {
+    max-width: 515px;
+    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
+    position: relative;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
     width: 100%;
+    border-radius: 20px;
+    padding: 70px 50px;
   }
   &__exit {
     position: absolute;
@@ -1329,9 +1327,8 @@ a {
     text-align: center;
   }
 
-  &__select option:last-child {
-    // display: flex;
-    background-color: #000;
+  &__select:nth-child(odd) {
+    background-color: #f1f1f1;
   }
 
   &__select {
@@ -1368,7 +1365,7 @@ option {
 
 .pa-add-edit {
   display: none;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   top: 0;
@@ -1377,18 +1374,20 @@ option {
   background-color: rgba($color: #000000, $alpha: 0.8);
   overflow: auto;
   &__body {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 650px;
-    width: 100%;
-    margin: 0 auto;
-    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
-    padding: 70px 50px;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 40px 10px;
   }
   &__content {
+    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
+    position: relative;
+    border-radius: 20px;
+    padding: 50px 55px;
+    max-width: 485px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -1480,34 +1479,35 @@ option {
 
 .pa-list-dep {
   display: none;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 6;
   background-color: rgba($color: #000000, $alpha: 0.8);
   overflow: auto;
   &__body {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 523px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin: 0 auto;
-    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
-    padding: 60px 30px;
-    border-radius: 20px;
+    min-height: 100%;
+    padding: 40px 10px;
   }
 
   &__content {
+    position: relative;
+    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
+    max-width: 520px;
     width: 100%;
+    border-radius: 20px;
+    padding: 60px 30px;
   }
 
   &__exit {
@@ -1603,7 +1603,7 @@ option {
 
 .pa-list-user {
   display: none;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   top: 0;
@@ -1612,25 +1612,27 @@ option {
   background-color: rgba($color: #000000, $alpha: 0.8);
   overflow: auto;
   &__body {
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%);
-    max-width: 1350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding: 40px 10px;
     width: 100%;
     margin: 0 auto;
-    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
-    padding: 60px 30px;
-    border-radius: 20px;
   }
 
   &__content {
+    position: relative;
+    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
+    border-radius: 20px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
     width: 100%;
+    max-width: 1350px;
+    padding: 60px 30px;
   }
 
   &__exit {
@@ -1792,7 +1794,7 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
 
 .pa-oper {
   display: none;
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   top: 0;
@@ -1801,25 +1803,25 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
   background-color: rgba($color: #000000, $alpha: 0.8);
   overflow: auto;
   &__body {
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%);
-    max-width: 1350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin: 0 auto;
-    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
-    padding: 60px 30px;
-    border-radius: 20px;
+    min-height: 100%;
+    padding: 40px 10px;
   }
 
   &__content {
-    background-color: #fff;
+    position: relative;
+    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
+    max-width: 1350px;
     width: 100%;
+    padding: 60px 30px;
+    border-radius: 20px;
   }
 
   &__exit {
@@ -1878,6 +1880,259 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
   border-bottom: 2px solid #1b1b1d;
 }
 
+.pa-list-ppo {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  overflow: auto;
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding: 40px 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__content {
+    position: relative;
+    background: url(../img/pa-add-vec.png) center / cover no-repeat, #fff;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1350px;
+    padding: 60px 30px;
+  }
+
+  &__exit {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    background-color: #c5c5c5;
+    border-radius: 50%;
+    padding: 10px;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+  }
+
+  &__title {
+    color: #222222;
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.31px;
+    margin-bottom: 20px;
+  }
+
+  &__table-block {
+    margin-bottom: 80px;
+  }
+
+  &__table {
+    border: 2px solid #1b1b1d !important;
+    background-color: #ffffff;
+  }
+
+  &__small-button {
+    margin-bottom: 50px;
+  }
+
+  &__edit {
+    display: flex;
+    align-items: center;
+  }
+
+  &__edit span {
+    color: #222222;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 29.32px;
+    text-align: left;
+    letter-spacing: -0.63px;
+    margin-left: 10px;
+  }
+}
+
+.pa-add-user-select {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+  
+  &__header {
+  }
+
+  &__header input {
+    width: 420px;
+    opacity: 0.39;
+    color: #222222;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 37px;
+    text-align: center;
+    -webkit-box-shadow: 0 0 5px 1px rgba(6, 6, 6, 0.25);
+    box-shadow: 0 0 5px 1px rgba(6, 6, 6, 0.25);
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+  }
+
+  &__current {
+  }
+
+  &__body {
+    position: absolute;
+    z-index: 5;
+    display: none;
+    
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222222;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 52.47px;
+    text-align: center;
+    letter-spacing: -0.68px;
+    width: 420px;
+    height: 78px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  &__item span {
+    margin-right: 10px;
+  }
+
+  &__item:nth-child(even) {
+    background-color: #fafafa;
+  }
+}
+
+.pa-add-user-select.is-active .pa-add-user-select__body {
+  display: block;
+}
+
+.pa-list-ppo .custom-select {
+  background: #fff url(../img/arrow_down-pa.svg) no-repeat right 0.75rem center/8px;
+}
+
+.pa-list-ppo div.dataTables_wrapper div.dataTables_filter input {
+  background: url(../img/pa-search.svg) center right no-repeat, #fff;
+  // font-size: 0;
+}
+
+.pa-list-ppo table.dataTable > thead .sorting:after,
+table.dataTable > thead .sorting_asc:after,
+table.dataTable > thead .sorting_desc:after,
+table.dataTable > thead .sorting_asc_disabled:after,
+table.dataTable > thead .sorting_desc_disabled:after {
+  content: "\25BC";
+  right: 0.3em;
+  bottom: 0.5em;
+}
+
+.pa-list-ppo div.dataTables_wrapper div.dataTables_filter label {
+  font-size: 0;
+}
+
+.pa-list-ppo table.dataTable > thead .sorting:before,
+table.dataTable > thead .sorting_asc:before,
+table.dataTable > thead .sorting_desc:before,
+table.dataTable > thead .sorting_asc_disabled:before,
+table.dataTable > thead .sorting_desc_disabled:before {
+  content: "\25B2";
+  top: 0.4em;
+  right: 0.3em;
+}
+
+.pa-list-ppo thead tr th {
+  vertical-align: middle;
+  width: 230px !important;
+  // width: 200px;
+  // height: 75px;
+}
+.pa-list-ppo tbody tr td {
+  vertical-align: middle;
+  // width: 200px;
+  height: 25px !important;
+}
+
+.pa-list-ppo tr td {
+  background-color: #fff;
+  color: #222222;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  padding: 30px !important;
+}
+
+.pa-list-ppo table.dataTable > thead > tr > th:not(.sorting_disabled),
+table.dataTable > thead > tr > td:not(.sorting_disabled) {
+  color: #222222;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+
+.pa-list-ppo thead {
+  border-bottom: 2px solid #1b1b1d !important;
+}
+
+.pa-list-ppo div.dataTables_wrapper div.dataTables_info {
+  color: #222222;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: -0.63px;
+  padding: 0;
+}
+
+.pa-list-ppo .row:last-child {
+  padding: 40px;
+}
+
+.pa-list-ppo .page-item.active .page-link {
+  background-color: #dadadb;
+  border: none;
+  color: #222222;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: -0.63px;
+  outline: none;
+  font-size: 25px;
+}
+
+.pa-list-ppo .page-link {
+  border: none;
+  color: #222222;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: -0.63px;
+  outline: none;
+  font-size: 25px;
+}
 // ========================== MEDIA ==========================
 @media (max-width: 1229px) {
   .what__icon {
