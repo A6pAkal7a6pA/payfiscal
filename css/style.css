@@ -2222,6 +2222,28 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
   margin-left: 10px;
 }
 
+.pa-list-ppo div.dataTables_wrapper div.dataTables_length label {
+  color: #222222;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pa-list-ppo div.dataTables_wrapper div.dataTables_length select {
+  width: 80px;
+  height: 45px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: center;
+}
+
 .pa-add-user-select {
   position: relative;
   height: 100%;
@@ -2286,10 +2308,14 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
 
 .pa-list-ppo .custom-select {
   background: #fff url(../img/arrow_down-pa.svg) no-repeat right 0.75rem center/8px;
+  margin-left: 10px;
 }
 
 .pa-list-ppo div.dataTables_wrapper div.dataTables_filter input {
+  width: 270px;
+  height: 45px;
   background: url(../img/pa-search.svg) center right no-repeat, #fff;
+  border: 2px solid #222222;
 }
 
 .pa-list-ppo table.dataTable > thead .sorting:after,
