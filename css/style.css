@@ -2081,6 +2081,10 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
   border-bottom: 2px solid #1b1b1d;
 }
 
+.wrapper a:hover {
+  color: initial;
+}
+
 @media (max-width: 1229px) {
   .what__icon {
     right: 0;
