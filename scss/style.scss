@@ -1006,6 +1006,7 @@ a {
   &__body {
     background: url(../img/pa-bg.jpg) center / cover no-repeat;
     padding-top: 150px;
+    padding-bottom: 300px;
   }
 
   &__content {
@@ -1613,7 +1614,7 @@ option {
   &__body {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 30%;
     transform: translate(-50%);
     max-width: 1350px;
     width: 100%;
@@ -1802,7 +1803,7 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
   &__body {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 30%;
     transform: translate(-50%);
     max-width: 1350px;
     width: 100%;
@@ -1866,14 +1867,13 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
   background-color: #fff;
 }
 
-
 .pa-oper tr td span {
   border-bottom: 2px solid #0ad400;
   border-left: none;
-  border-right: no;
+  border-right: none;
 }
 
-.pa-oper .table-bordered th{
+.pa-oper .table-bordered th {
   border: none;
   border-bottom: 2px solid #1b1b1d;
 }

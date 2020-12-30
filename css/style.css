@@ -1106,6 +1106,7 @@ a {
 .main-screen-pa__body {
   background: url(../img/pa-bg.jpg) center/cover no-repeat;
   padding-top: 150px;
+  padding-bottom: 300px;
 }
 
 .main-screen-pa__content {
@@ -1802,7 +1803,7 @@ option {
 .pa-list-user__body {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 30%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   max-width: 1350px;
@@ -2001,7 +2002,7 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
 .pa-oper__body {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 30%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   max-width: 1350px;
@@ -2073,7 +2074,7 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
 .pa-oper tr td span {
   border-bottom: 2px solid #0ad400;
   border-left: none;
-  border-right: no;
+  border-right: none;
 }
 
 .pa-oper .table-bordered th {
