@@ -1790,7 +1790,7 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
 }
 
 .pa-oper {
-  display: block;
+  display: none;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1866,9 +1866,6 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
   background-color: #fff;
 }
 
-.pa-oper tr th {
-
-}
 
 .pa-oper tr td span {
   border-bottom: 2px solid #0ad400;
@@ -1879,10 +1876,6 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
 .pa-oper .table-bordered th{
   border: none;
   border-bottom: 2px solid #1b1b1d;
-}
-
-.wrapper a:hover {
-  color: ;
 }
 
 // ========================== MEDIA ==========================

@@ -1576,7 +1576,7 @@ option {
   margin-bottom: 40px;
 }
 
-.pa-add-edit__green-button a {
+.pa-add-edit__green-button span {
   display: block;
   color: #ffffff;
   font-size: 30px;
@@ -1987,7 +1987,7 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
 }
 
 .pa-oper {
-  display: block;
+  display: none;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -2079,10 +2079,6 @@ table.dataTable > thead > tr > td:not(.sorting_disabled) th {
 .pa-oper .table-bordered th {
   border: none;
   border-bottom: 2px solid #1b1b1d;
-}
-
-.wrapper a:hover {
-  color: initial;
 }
 
 @media (max-width: 1229px) {
