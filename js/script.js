@@ -25,14 +25,7 @@ $(document).ready(function () {
   });
 
 });
-// $(document).mouseup(function (e) {
-//   var popup = $('.popup-enter__body', '.popup-reg__body');
-//   if (e.target!=popup && popup.has(e.target).length === 0) {
-//     $('.popup-enter').fadeOut();
-//     $('.popup-reg').fadeOut();
-//     $('body').removeClass('lock');
-//   }
-// });
+
 const anchors = document.querySelectorAll('a[href*="#"');
 
 for(let anchor of anchors) {
